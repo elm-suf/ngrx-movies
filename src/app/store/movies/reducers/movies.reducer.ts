@@ -1,6 +1,6 @@
 import { Action, createReducer, on } from '@ngrx/store';
 import { moviesActions } from '../actions';
-import { Movie } from '../models';
+import { Movie } from '../../common/models';
 
 export interface MoviesState {
   query: string;

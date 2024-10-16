@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { Movie } from '../store/movies';
+import { Movie } from '../store/common/models';
 
 @Component({
   selector: 'app-movie-details',
