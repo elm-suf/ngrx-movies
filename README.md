@@ -10,18 +10,28 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Setup
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+`pnpm install`
 
-## Running unit tests
+## commands
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- tailwind
 
-## Running end-to-end tests
+  -
+  - `install -D tailwindcss postcss autoprefixer`
+  - `npx tailwindcss init`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- ngrx
+  - `npm install @ngrx/{store,store-devtools,entity,effects}`
+  - `ng g module root-store --flat false --module app.module.ts`
+  - #### Entity Feature Module approach
+    -  `ng g module root-store/{my-feature}-store --flat false --module root-store/root-store.module.ts`
+    - 
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- ngrx - manual
+  - ACTIONS FORLDER : 
+      - feature.action.ts + index.ts
+  - REDUCER FORLDER : 
+      - feature.reducer.ts + index.ts
+  - 
